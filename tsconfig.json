@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "es6"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "typeRoots": ["../node_modules/@types", "@types", "./node_modules"],
+    "noFallthroughCasesInSwitch": true,
+    "types": ["vite/client"],
+
+    /* Alias import */
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "src/@types/**/*", "src/.env"]
+}
