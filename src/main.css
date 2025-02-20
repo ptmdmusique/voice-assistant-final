@@ -1,22 +1,37 @@
 @import "tailwindcss";
 
-@theme {
-  --color-baseline: rgb(238, 237, 237);
-  --color-primary: rgb(83, 178, 255);
-  --color-secondary: rgb(39, 154, 248);
-  --color-inverted: rgb(33, 33, 33);
-  --color-fill: rgb(83, 178, 255);
+.theme-dark {
+  --text-base: rgb(238, 237, 237);
+  --text-primary: rgb(83, 178, 255);
+  --text-secondary: rgb(39, 154, 248);
+  --text-inverted: rgb(33, 33, 33);
+  --fill: rgb(83, 178, 255);
+  --background: rgb(18, 24, 27);
+  --background-top: rgb(42, 46, 53);
+  --background-overflow-menu: rgb(46, 46, 46);
+  --background-active: rgb(58, 65, 73);
 
-  --color-bg: rgb(18, 24, 27);
-  --color-bg-top: rgb(42, 46, 53);
-  --color-bg-overflow-menu: rgb(46, 46, 46);
-  --color-bg-active: rgb(58, 65, 73);
+  --danger: rgb(253, 88, 88);
+  --success: rgb(127, 255, 127);
+  --warning: rgb(255, 183, 51);
+  --info: rgb(51, 164, 255);
+  --default: rgb(232, 230, 227);
+  --exquisite: rgb(211, 131, 251);
+  --disabled: rgb(115, 117, 132);
+}
 
-  --color-danger: rgb(253, 88, 88);
-  --color-success: rgb(127, 255, 127);
-  --color-warning: rgb(255, 183, 51);
-  --color-info: rgb(51, 164, 255);
-  --color-default: rgb(232, 230, 227);
-  --color-exquisite: rgb(211, 131, 251);
-  --color-disabled: rgb(115, 117, 132);
+@theme inline {
+  --color-baseline: var(--text-base);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-inverted: var(--text-inverted);
+  --color-fill: var(--fill);
+
+  --color-bg: var(--background);
+  --color-bg-top: var(--background-top);
+
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
 }
