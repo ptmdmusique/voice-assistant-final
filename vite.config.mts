@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/postcss";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 import pluginChecker from "vite-plugin-checker";
@@ -6,8 +6,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig(() => ({
   build: { outDir: "build" },
-  css: { postcss: { plugins: [tailwindcss] } },
-  plugins: [tsconfigPaths(), react(), pluginChecker({ typescript: true })],
+  plugins: [
+    tsconfigPaths(),
+    react(),
+    pluginChecker({ typescript: true }),
+    tailwindcss(),
+  ],
   resolve: {
     alias: [{ find: "@", replacement: "/src" }],
   },

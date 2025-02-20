@@ -33,9 +33,6 @@ importers:
       '@eslint/js':
         specifier: ^9.19.0
         version: 9.20.0
-      '@tailwindcss/postcss':
-        specifier: ^4.0.7
-        version: 4.0.7
       '@types/react':
         specifier: ^19.0.8
         version: 19.0.10
@@ -77,10 +74,6 @@ importers:
         version: 5.1.4(typescript@5.7.3)(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))
 
 packages:
-
-  '@alloc/quick-lru@5.2.0':
-    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
-    engines: {node: '>=10'}
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -666,9 +659,6 @@ packages:
   '@tailwindcss/oxide@4.0.7':
     resolution: {integrity: sha512-yr6w5YMgjy+B+zkJiJtIYGXW+HNYOPfRPtSs+aqLnKwdEzNrGv4ZuJh9hYJ3mcA+HMq/K1rtFV+KsEr65S558g==}
     engines: {node: '>= 10'}
-
-  '@tailwindcss/postcss@4.0.7':
-    resolution: {integrity: sha512-zXcKs1uGssVDlnsQ+iwrkul5GPKvsXPynGCuk/eXLx3DVhHlQKMpA6tXN2oO28x2ki1xRBTfadKiHy2taVvp7g==}
 
   '@tailwindcss/vite@4.0.7':
     resolution: {integrity: sha512-GYx5sxArfIMtdZCsxfya3S/efMmf4RvfqdiLUozkhmSFBNUFnYVodatpoO/en4/BsOIGvq/RB6HwcTLn9prFnQ==}
@@ -1535,8 +1525,6 @@ packages:
 
 snapshots:
 
-  '@alloc/quick-lru@5.2.0': {}
-
   '@ampproject/remapping@2.3.0':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.8
@@ -1997,15 +1985,6 @@ snapshots:
       '@tailwindcss/oxide-linux-x64-musl': 4.0.7
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.7
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.7
-
-  '@tailwindcss/postcss@4.0.7':
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      '@tailwindcss/node': 4.0.7
-      '@tailwindcss/oxide': 4.0.7
-      lightningcss: 1.29.1
-      postcss: 8.5.3
-      tailwindcss: 4.0.7
 
   '@tailwindcss/vite@4.0.7(vite@6.1.1(jiti@2.4.2)(lightningcss@1.29.1)(sass@1.85.0))':
     dependencies:
